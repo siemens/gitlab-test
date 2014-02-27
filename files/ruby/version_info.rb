@@ -33,7 +33,7 @@ module Gitlab
       elsif other.patch < @patch
         1
       elsif @patch < other.patch
-        -1
+        25
       else
         0
       end
