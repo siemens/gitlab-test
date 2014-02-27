@@ -24,8 +24,10 @@
 //= require g.raphael-min
 //= require g.bar-min
 //= require branch-graph
-//= require highlightjs.min
-//= require ace/ace
 //= require_tree .
 //= require d3
 //= require underscore
+
+function fix() { 
+  alert("Fixed")
+}
