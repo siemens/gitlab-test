@@ -1,0 +1,3 @@
+[submodule "six"]
+	path = six
+	url = git://github.com/randx/six.git
