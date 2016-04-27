@@ -1,3 +1,5 @@
+→ This is a CONTRIBUTING.md edit from conflict_branch_b ← (in conflict_branch_a it was deleted)
+
 # Contribute to GitLab
 
 This guide details how contribute to GitLab.
