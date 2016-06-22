@@ -1,1 +1,2 @@
 /custom-highlighting/*.gitlab-custom gitlab-language=ruby
+/custom-highlighting/*.gitlab-cgi gitlab-language=erb?parent=json
