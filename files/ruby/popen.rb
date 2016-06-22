@@ -6,7 +6,7 @@ module Popen
 
   def popen(cmd, path=nil)
     unless cmd.is_a?(Array)
-      raise "System commands must be given as an array of strings"
+      raise RuntimeError.new("System commands must be given as an array of strings")
     end
 
     path ||= Dir.pwd
