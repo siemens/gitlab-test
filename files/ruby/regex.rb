@@ -7,11 +7,11 @@ module Gitlab
     end
 
     def project_name_regex
-      /\A[a-zA-Z0-9][a-zA-Z0-9_\-\. ]*\z/
+      %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-\. ]*\z}
     end
 
     def name_regex
-      /\A[a-zA-Z0-9_\-\. ]*\z/
+      %r{\A[a-zA-Z0-9_\-\. ]*\z}
     end
 
     def path_regex
@@ -19,7 +19,7 @@ module Gitlab
     end
 
     def archive_formats_regex
-      /(zip|tar|7z|tar\.gz|tgz|gz|tar\.bz2|tbz|tbz2|tb2|bz2)/
+      %r{(zip|tar|7z|tar\.gz|tgz|gz|tar\.bz2|tbz|tbz2|tb2|bz2)}
     end
 
     def git_reference_regex
@@ -47,7 +47,7 @@ module Gitlab
     protected
 
     def default_regex
-      /\A[.?]?[a-zA-Z0-9][a-zA-Z0-9_\-\.]*(?<!\.git)\z/
+      %r{\A[.?]?[a-zA-Z0-9][a-zA-Z0-9_\-\.]*(?<!\.git)\z}
     end
   end
 end
