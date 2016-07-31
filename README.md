@@ -1,4 +1,3 @@
-testme
-======
+# ends-with.json
 
-Sample repo for testing gitlab features
+branch for testing https://gitlab.com/gitlab-org/gitlab-ce/issues/20462

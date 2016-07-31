@@ -1,5 +1,0 @@
-class ShouldBeHighlightedAsRuby
-  def because_of_gitattributes
-    cool!
-  end
-end
