@@ -1,4 +1,4 @@
-# Prelude
+# Prelude (to a style guide)
 
 > Role models are important. <br/>
 > -- Officer Alex J. Murphy / RoboCop
