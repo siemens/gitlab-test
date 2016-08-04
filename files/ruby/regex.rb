@@ -2,28 +2,28 @@ module Gitlab
   module Regex
     extend self
 
-    def username_regex
-      default_regex
+    def username_regexp
+      default_regexp
     end
 
-    def project_name_regex
+    def project_name_regexp
       /\A[a-zA-Z0-9][a-zA-Z0-9_\-\. ]*\z/
     end
 
-    def name_regex
+    def name_regexp
       /\A[a-zA-Z0-9_\-\. ]*\z/
     end
 
-    def path_regex
-      default_regex
+    def path_regexp
+      default_regexp
     end
 
-    def archive_formats_regex
+    def archive_formats_regexp
       /(zip|tar|7z|tar\.gz|tgz|gz|tar\.bz2|tbz|tbz2|tb2|bz2)/
     end
 
-    def git_reference_regex
-      # Valid git ref regex, see:
+    def git_reference_regexp
+      # Valid git ref regexp, see:
       # https://www.kernel.org/pub/software/scm/git/docs/git-check-ref-format.html
       %r{
         (?!
@@ -46,7 +46,7 @@ module Gitlab
 
     protected
 
-    def default_regex
+    def default_regexp
       /\A[.?]?[a-zA-Z0-9][a-zA-Z0-9_\-\.]*(?<!\.git)\z/
     end
   end
