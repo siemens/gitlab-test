@@ -1435,19 +1435,6 @@ setting the warn level to 0 via `-W0`).
 > naming things. <br/>
 > -- Phil Karlton
 
-* Name identifiers in English.
-
-    ```Ruby
-    # bad - identifier using non-ascii characters
-    заплата = 1_000
-
-    # bad - identifier is a Bulgarian word, written with Latin letters (instead of Cyrillic)
-    zaplata = 1_000
-
-    # good
-    salary = 1_000
-    ```
-
 * Use `snake_case` for symbols, methods and variables.
 
     ```Ruby
@@ -1704,7 +1691,7 @@ at all.
       extend SomeModule
       include AnotherModule
 
-      # inner classes 
+      # inner classes
       CustomErrorKlass = Class.new(StandardError)
 
       # constants are next
@@ -1737,12 +1724,12 @@ at all.
     end
     ```
 
-* Don't nest multi line classes within classes. Try to have such nested 
+* Don't nest multi line classes within classes. Try to have such nested
   classes each in their own file in a folder named like the containing class.
 
     ```Ruby
     # bad
-    
+
     # foo.rb
     class Foo
       class Bar
