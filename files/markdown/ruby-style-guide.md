@@ -1436,19 +1436,6 @@ setting the warn level to 0 via `-W0`).
 > naming things. <br/>
 > -- Phil Karlton
 
-* Name identifiers in English.
-
-    ```Ruby
-    # bad - identifier using non-ascii characters
-    заплата = 1_000
-
-    # bad - identifier is a Bulgarian word, written with Latin letters (instead of Cyrillic)
-    zaplata = 1_000
-
-    # good
-    salary = 1_000
-    ```
-
 * Use `snake_case` for symbols, methods and variables.
 
     ```Ruby
