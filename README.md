@@ -14,3 +14,4 @@ add them to the `gitlab-test` repo in order to access that blob during developme
 3. Add your branch and its head commit to the `BRANCH_SHA` hash in [`test_env.rb`](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/spec/support/test_env.rb#L7-42).
 
 In rspec, you can use `create(:project)` to create an instance of `gitlab-test` that has a `path` of `gitlabhq`.
+
